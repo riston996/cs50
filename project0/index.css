@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .container {
     height: 100vh;
     border: 2px solid black;
@@ -8,13 +12,45 @@
 }
 
 .header {
-    grid-column: 2/ span 2;
+    grid-column: 1/ span 3;
     grid-row: 1/ span 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 60px;
     padding: 5px;
+    /* background-color: #202124; */
+}
+
+.hero {
+    grid-column: 1/ span 3;
+    grid-row: 2/ span 1;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding: 0px 30px;
+    border-bottom: 2px solid #56575a;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    width: 350px;
+}
+
+.hero--text {
+    font-size: 20px;
+    color:#F28B82;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover{
+    text-decoration: underline;
 }
 
 .picture{
@@ -25,6 +61,47 @@ textarea:focus, input:focus{
     outline: none;
 }
 
+.hero-form{
+    /* border: 2px solid red; */
+    width:100%;
+    
+}
+
+.dark {
+    background-color: #202124;
+}
+
+.white {
+    color: #E8EAED;
+}
+
+#blanks {
+    padding: 0px 50px;
+    width: 100%;
+}
+
+#blanks input[type="text"] {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+   
+    /* border: 2px solid black; */
+}
+
+.blanks-bar {
+    margin-top: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-content: center;
+    color: #969BA1;
+    /* border: 2px solid black; */
+}
+
+.blanks-bar label {
+    margin-top: 10px;
+}
 
 .form {
     grid-column: 1/ span 3;
@@ -101,6 +178,26 @@ textarea:focus, input:focus{
     border: 0px solid black;
 }
 
+.btns-advance {
+    margin-top: 10px;
+    padding: 9px 60px;
+    border-radius: 2px;
+    background-color: #8AB4F9;
+    font-size: 20px;
+    color: #202124;
+    border: 0px solid black;
+}
+
+.btns-advance:hover {
+    margin-top: 10px;
+    padding: 9px 60px;
+    border-radius: 2px;
+    background-color: #aecbfa;
+    font-size: 20px;
+    color: #202124;
+    cursor: pointer;
+}
+
 .btns:hover {
     border: 1px solid #47494b;
 }
@@ -111,6 +208,14 @@ textarea:focus, input:focus{
     align-items: center;
     height: 48px;
     width: 300px;
+}
+
+.top2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 48px;
+    width: 120px;
 }
 
 .pp {
@@ -203,3 +308,4 @@ textarea:focus, input:focus{
     gap:20px;
     padding: 10px;
 }
+
